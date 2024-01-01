@@ -30,3 +30,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/bramble/bramble:14/UP1A.231105.001/10817346:user/release-keys
 
 $(call inherit-product, vendor/google/bramble/bramble-vendor.mk)
+
+# Matrixx
+MATRIXX_MAINTAINER := Ash
+MATRIXX_CHIPSET := SM7250
+MATRIXX_BATTERY := 3885mah
+MATRIXX_DISPLAY := 1080x2340
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+
+# Pixel Flags
+TARGET_IS_PIXEL := true
+TARGET_PIXEL_STAND_SUPPORTED := true
