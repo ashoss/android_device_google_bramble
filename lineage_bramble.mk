@@ -37,10 +37,10 @@ MATRIXX_CHIPSET := SM7250
 MATRIXX_BATTERY := 3885mah
 MATRIXX_DISPLAY := 1080x2340
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+#WITH_GMS := true
 
 # Pixel Flags
 TARGET_IS_PIXEL := true
-TARGET_PIXEL_STAND_SUPPORTED := true
+
 include packages/apps/PixelParts/device.mk
 include vendor/google/camera/config.mk
