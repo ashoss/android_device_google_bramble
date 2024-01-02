@@ -42,5 +42,5 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Pixel Flags
 TARGET_IS_PIXEL := true
 
-include packages/apps/PixelParts/device.mk
-include vendor/google/camera/config.mk
+#include packages/apps/PixelParts/device.mk
+#include vendor/google/camera/config.mk
