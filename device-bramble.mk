@@ -192,3 +192,5 @@ PRODUCT_PACKAGES += \
 # Workaround for Qualcomm neural network HAL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
+
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
