@@ -34,13 +34,27 @@ $(call inherit-product, vendor/google/bramble/bramble-vendor.mk)
 # Matrixx
 MATRIXX_MAINTAINER := Ash
 MATRIXX_CHIPSET := SM7250
-MATRIXX_BATTERY := 3885mah
+MATRIXX_BATTERY := 3885mAh
 MATRIXX_DISPLAY := 1080x2340
+
+# Target flags
+TARGET_DISABLE_EPPE := true
 TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := false
 
 # Pixel Flags
 TARGET_IS_PIXEL := true
 
-#include packages/apps/PixelParts/device.mk
-#include vendor/google/camera/config.mk
+#Build with Gapps
+WITH_GMS := true
+
+#Add Google Contacts, Dialer & Messaging 
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+
+#Exclude Packages
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDES_AUXIO := true
+TARGET_EXCLUDES_VIA := true
